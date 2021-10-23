@@ -2,7 +2,7 @@ let eqArrays = (actual, expected) => {
   if (!actual || actual.length === 0) {
     return false;
   }
-  for (let i = 0; i < actual.length; i ++) {
+  for (let i = 0; i < expected.length; i ++) {
     if (actual[i] !== expected[i]) {
       return false;
     }
