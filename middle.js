@@ -28,29 +28,24 @@ let getMiddleUneven = num => {
 };
 
 let getMiddleEven = num => {
-  let indexEven = 0;
-
-  return indexEven = num.length / 2;
-
-}
+  return num.length / 2;
+};
 
 let middle = arr => {
   let answer = [];
 
   if (arr.length <= 2) { // Array <= 2 elements
     return answer = [];
-  }
-  else if (arr.length % 2 !== 0) { // Uneven array.length
+  } else if (arr.length % 2 !== 0) { // Uneven array.length
     answer.push(arr[getMiddleUneven(arr)]);
     return answer;
-  } // Even array.length
-  answer.push(arr[(getMiddleEven(arr)-1)]);
+  } answer.push(arr[(getMiddleEven(arr) - 1)]); // Even array.length
   answer.push(arr[getMiddleEven(arr)]);
   return answer;
   
-} 
+};
 
-assertArraysEqual(middle([1,2,3,4,5]), [3]);
+assertArraysEqual(middle([1,2,3,4]), [2,3]);
 
 //console.log(getMiddleUneven([1,2,3,4,5]));
 
