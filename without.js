@@ -26,7 +26,7 @@ let without = (source, itemsToRemove) => {
     for (let x = 0; x < itemsToRemove.length; x++) {
       if (newArray[i] === itemsToRemove[x]) {
         newArray.splice(i, 1); // removes the element at source that matches itemsToRemove
-        i --; // to account for the new length of source 
+        i --; // to account for the new length of source
       }
     }
   }
