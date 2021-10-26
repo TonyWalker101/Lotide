@@ -10,7 +10,7 @@ assertEqual(1,1);
 */
 
 let eqArrays = (actual, expected) => {
-  if (!actual || actual.length === 0) {
+  if (!actual || actual.length === 0 || actual.length !== expected.length) {
     return false;
   }
   for (let i = 0; i < actual.length; i ++) {
