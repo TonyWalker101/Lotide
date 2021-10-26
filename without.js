@@ -19,16 +19,23 @@ let assertArraysEqual = function(actual, expected) {
 
 
 
-let without = (source, itemsToRemove) => {
-  let newArray = source.map(x => x); // creates a clone of source
-  
-  for (let i = 0; i < newArray.length; i++) {
-    for (let x = 0; x < itemsToRemove.length; x++) {
-      if (newArray[i] === itemsToRemove[x]) {
-        newArray.splice(i, 1); // removes the element at source that matches itemsToRemove
-        i --; // to account for the new length of source
-      }
+const includes = (arr, item) => { // checks if one 1 item is found any element of an array
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === item) {
+      return true;
     }
+  }
+  return false;
+};
+
+const without = (source, itemsToRemove) => {
+  const newArray = [];
+
+  for (let i = 0; i < source.length; i++) {
+    if (includes(itemsToRemove, source[i])) {
+      continue;
+    } newArray.push(source[i]);
   }
   return console.log(newArray);
 };
