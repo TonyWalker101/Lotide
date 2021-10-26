@@ -13,12 +13,7 @@ const counterLetters = input => {
 
     if (letter === " ") {
       continue;
-    }
-    if (answer[letter]) {
-      answer[letter] ++;
-    } else {
-      answer[letter] = 1;
-    }
+    } (answer[letter]) ? answer[letter] ++ : answer[letter] = 1;
   }
   return answer;
 };
@@ -27,5 +22,4 @@ console.log(counterLetters("Hello World"));
 console.log(counterLetters("lighthouse in the house"));
 
 assertEqual(counterLetters("H")["H"], 1);
-
 
