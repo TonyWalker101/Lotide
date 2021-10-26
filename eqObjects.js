@@ -5,6 +5,18 @@ const assertEqual = function(actual, expected) {
   return console.log(`Assertion Failed: 🛑 ${actual} !== ${expected}`);
 };
 
+let eqArrays = (actual, expected) => {
+  if (!actual || actual.length === 0 || actual.length !== expected.length) {
+    return false;
+  }
+  for (let i = 0; i < actual.length; i ++) {
+    if (actual[i] !== expected[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const eqObjects = function(object1,object2) {
 
   if (Object.keys(object1).length !== Object.keys(object2).length) {
@@ -19,13 +31,10 @@ const eqObjects = function(object1,object2) {
   return false;
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
 
-eqObjects(ab, ba); // => true
-assertEqual(eqObjects(ab,ba), true);
+assertEqual(eqObjects(cd, dc), true); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-
-eqObjects(ab, abc); // => false
-assertEqual(eqObjects(ab,abc), false);
+const cd2 = { c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), false); // => false
