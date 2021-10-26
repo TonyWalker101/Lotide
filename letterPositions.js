@@ -46,12 +46,7 @@ const letterPositions = function(sentence) {
     if (letter === " ") {
       index ++;
       continue;
-    }
-    if (results[letter]) {
-      results[letter].push(index);
-    } else {
-      results[letter] = [index];
-    }
+    } (results[letter]) ? results[letter].push(index) : results[letter] = [index];
     index ++;
   }
   return results;
