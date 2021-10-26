@@ -17,24 +17,6 @@ let assertArraysEqual = function(actual, expected) {
   return console.log(`Assertion Failed: 🛑 ${actual} !== ${expected}`);
 };
 
-assertArraysEqual("Hello", {H:0,e:1,l:[2,3],o:4});
-
-
-// const letterPositions = function(sentence) {
-
-// const results = {};
-
-// for (let i = 0; i < sentence.length; i++) {
-  
-//   if (results[sentence]) {
-//     results[sentence].i ++;
-//   } else {
-//     results[sentence].i = 1;
-//     }
-//   }
-//   return results;
-// };
-
 
 const letterPositions = function(sentence) {
   
