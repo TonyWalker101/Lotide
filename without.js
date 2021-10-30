@@ -1,22 +1,6 @@
-let eqArrays = (actual, expected) => {
-  if (!actual || actual.length === 0) {
-    return false;
-  }
-  for (let i = 0; i < expected.length; i ++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
-let assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    return console.log(`Assertion Passed: ✅ ${actual} === ${expected}`);
-  }
-  return console.log(`Assertion Failed: 🛑 ${actual} !== ${expected}`);
-};
-
+const assertArraysEqual = require("./assertArraysEqual");
 
 
 const includes = (arr, item) => { // checks if one 1 item is found any element of an array
