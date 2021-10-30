@@ -1,21 +1,6 @@
-let eqArrays = (actual, expected) => {
-  if (!actual || actual.length === 0 || actual.length !== expected.length) {
-    return false;
-  }
-  for (let i = 0; i < actual.length; i ++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
-let assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    return console.log(`Assertion Passed: ✅ ${actual} === ${expected}`);
-  }
-  return console.log(`Assertion Failed: 🛑 ${actual} !== ${expected}`);
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 const words = ["ground", "control", "to", "major", "tom"];
 
