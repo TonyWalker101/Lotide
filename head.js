@@ -1,11 +1,8 @@
 const assertEqual = require("./assertEqual");
 
-let head = arr => {
+const head = arr => {
   return arr[0];
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
+module.exports = head;
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
