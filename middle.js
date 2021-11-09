@@ -1,37 +1,37 @@
-const eqArrays = require("./eqArrays");
+// gets Middle Index for Uneven Arrays
+const getMiddleIndexUneven = arr => {
 
-const assertArraysEqual = require("./assertArraysEqual");
+  return Math.floor(arr.length / 2);
 
-
-let getMiddleUneven = num => {
-  let indexUneven = 0;
-
-  for (let i = 0; i < num.length; i ++) {
-    indexUneven += i;
-  }
-  return (indexUneven / num.length);
 };
 
-let getMiddleEven = num => {
-  return num.length / 2;
+// gets Middle Index for Even Arrays
+const getMiddleIndexEven = arr => {
+
+  return (arr.length / 2);
 };
 
-let middle = arr => {
+const middle = arr => {
+
   let answer = [];
 
-  if (arr.length <= 2) { // Array <= 2 elements
-    return answer = [];
-  } else if (arr.length % 2 !== 0) { // Uneven array.length
-    answer.push(arr[getMiddleUneven(arr)]);
+  // Returns Empty Array if Array <= 2 elements
+  if (arr.length <= 2) {
+
     return answer;
-  } answer.push(arr[(getMiddleEven(arr) - 1)]); // Even array.length
-  answer.push(arr[getMiddleEven(arr)]);
-  return answer;
-  
+  }
+
+  if (arr.length % 2 !== 0) {
+    //Returns Array's Element at Middle Index
+    answer.push(arr[getMiddleIndexUneven(arr)]);
+    return answer;
+
+  } else {
+    //Returns Array's 2 Elements at the Middle Indexes
+    answer.push(arr[getMiddleIndexEven(arr) - 1], arr[getMiddleIndexEven(arr)]);
+    return answer;
+  }
+
 };
 
-assertArraysEqual(middle([1,2,3,4]), [2,3]);
-
-//console.log(getMiddleUneven([1,2,3,4,5]));
-
-//console.log(getMiddleEven([1,2,3,4,5,6]));
+module.exports = middle;
