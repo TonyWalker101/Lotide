@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual");
-
 const counterLetters = input => {
   
   const answer = {};
@@ -13,8 +11,4 @@ const counterLetters = input => {
   return answer;
 };
 
-console.log(counterLetters("Hello World"));
-console.log(counterLetters("lighthouse in the house"));
-
-assertEqual(counterLetters("H")["H"], 1);
-
+module.exports = counterLetters;
