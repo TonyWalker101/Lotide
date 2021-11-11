@@ -1,3 +1,5 @@
+// Takes in an array and a callback and returns a new array based of the results of the callback
+
 const map = function(array, callback) {
   const results = [];
 
@@ -9,7 +11,3 @@ const map = function(array, callback) {
 };
 
 module.exports = map;
-
-
-
-
