@@ -1,3 +1,5 @@
+// Takes in an object and a value and returns the first key equal to that value
+
 const findKeyByValue = (object,value) => {
 
   for (const obj in object) {
