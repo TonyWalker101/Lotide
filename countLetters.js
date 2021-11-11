@@ -1,3 +1,5 @@
+// Takes in a sentence and returns a count of each letter in the sentence
+
 const counterLetters = input => {
   
   const answer = {};
