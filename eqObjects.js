@@ -1,11 +1,11 @@
-const assertEqual = require("./assertEqual");
-
 const eqArrays = require("./eqArrays");
 
+// Takes in 2 objects and returns True if they're equal and False if they're not
 
 const eqObjects = function(object1,object2) {
 
-  if (Object.keys(object1).length !== Object.keys(object2).length) { // checks if # of keys match
+  // checks if # of keys match
+  if (Object.keys(object1).length !== Object.keys(object2).length) { 
     return false;
   }
 
