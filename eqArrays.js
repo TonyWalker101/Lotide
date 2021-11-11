@@ -13,4 +13,3 @@ let eqArrays = (actual, expected) => {
 };
 
 module.exports = eqArrays;
-
