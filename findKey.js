@@ -1,3 +1,5 @@
+// Takes in an object and a callback and returns the first key that matches what callback is looking for
+
 const findKey = function(object, callback) {
 
   for (let obj in object) {
@@ -9,4 +11,3 @@ const findKey = function(object, callback) {
 };
 
 module.exports = findKey;
-
