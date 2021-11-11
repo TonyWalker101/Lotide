@@ -1,3 +1,5 @@
+// Takes in 2 arrays and returns true if they're equal and false if they're not
+
 let eqArrays = (actual, expected) => {
   if (!actual || actual.length === 0 || actual.length !== expected.length) {
     return false;
