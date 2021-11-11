@@ -1,5 +1,4 @@
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
+// Takes in a collection of items and returns a subset of those items 
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {}
