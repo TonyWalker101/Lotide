@@ -1,4 +1,6 @@
-const includes = (arr, item) => { // checks if 1 item is found any element of an array
+// Helper function to check if 1 item is found in any element of an array
+
+const includes = (arr, item) => { 
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === item) {
@@ -8,6 +10,8 @@ const includes = (arr, item) => { // checks if 1 item is found any element of an
   return false;
 };
 
+// Takes in 2 arrays and returns only the items not common between the two arrays
+
 const without = (source, itemsToRemove) => {
   const newArray = [];
 
@@ -16,7 +20,7 @@ const without = (source, itemsToRemove) => {
       continue;
     } newArray.push(source[i]);
   }
-  return console.log(newArray);
+  return newArray;
 };
 
 module.exports = without;
