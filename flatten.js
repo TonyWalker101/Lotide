@@ -1,3 +1,5 @@
+// Takes in an array that contains nested arrays and returns a "flattened" version of the array (contains no nested arrays)
+
 let flatten = list => {
   let newArray = [];
 
@@ -10,7 +12,7 @@ let flatten = list => {
       newArray.push(list[i][x]);
     }
   }
-  return console.log(newArray);
+  return newArray;
 };
 
 module.exports = flatten;
