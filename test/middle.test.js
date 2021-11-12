@@ -1,6 +1,8 @@
 const middle = require("../middle");
 const assert = require("chai").assert;
 
+// Test cases
+
 describe ("#middle", () => {
   it ("returns [2] for [1,2,3]", () => {
 
