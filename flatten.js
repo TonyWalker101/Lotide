@@ -1,6 +1,6 @@
 // Takes in an array that contains nested arrays and returns a "flattened" version of the array (contains no nested arrays)
 
-let flatten = list => {
+const flatten = list => {
   let newArray = [];
 
   for (let i = 0; i < list.length; i++) {
