@@ -1,19 +1,10 @@
-// Helper function that gets Middle Index for Uneven Arrays
+// Helper function that gets Middle Index of an Array
 
-const getMiddleIndexUneven = arr => {
+const getMiddleIndex = arr => {
 
   return Math.floor(arr.length / 2);
 
 };
-
-// Helper function that gets Middle Index for Even Arrays
-
-const getMiddleIndexEven = arr => {
-
-  return (arr.length / 2);
-};
-
-//Takes in an array and returns the middle most element(s) of the array
 
 const middle = arr => {
 
@@ -27,12 +18,12 @@ const middle = arr => {
 
   if (arr.length % 2 !== 0) {
     
-    answer.push(arr[getMiddleIndexUneven(arr)]);
+    answer.push(arr[getMiddleIndex(arr)]);
     return answer;
 
   } else {
     
-    answer.push(arr[getMiddleIndexEven(arr) - 1], arr[getMiddleIndexEven(arr)]);
+    answer.push(arr[getMiddleIndex(arr) - 1], arr[getMiddleIndex(arr)]);
     return answer;
   }
 
