@@ -1,5 +1,3 @@
-// Main function takes in an array and returns the middle most element(s) of the array
-
 // Helper function that gets middle index of an Array
 
 const getMiddleIndex = arr => {
@@ -8,7 +6,7 @@ const getMiddleIndex = arr => {
 
 };
 
-// Main function
+// Main function takes in an array and returns the middle most element(s) of the array
 
 const middle = arr => {
 
