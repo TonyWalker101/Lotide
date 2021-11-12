@@ -1,4 +1,4 @@
-// Function takes in an array and returns the middle most element(s) of the array
+// Main function takes in an array and returns the middle most element(s) of the array
 
 // Helper function that gets middle index of an Array
 
@@ -8,13 +8,12 @@ const getMiddleIndex = arr => {
 
 };
 
-// Main Function
+// Main function
 
 const middle = arr => {
 
   let answer = [];
 
-  // Returns Empty Array if Array <= 2 elements
   if (arr.length <= 2) {
 
     return answer;
