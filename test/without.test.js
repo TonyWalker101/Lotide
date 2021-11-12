@@ -10,7 +10,7 @@ without(["1", "2", "3"], [1, 2, "3"]);
 
 // Should equal ["hello","world"]
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); 
+console.log((without(words, ["lighthouse"]))); 
 
 // Makes sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
