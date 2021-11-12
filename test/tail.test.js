@@ -1,6 +1,8 @@
 const tail = require("../tail");
 const assert = require("chai").assert;
 
+// Test cases
+
 describe ("#tail", () => {
   it ("returns [2,3] for [1,2,3]", () => {
 
