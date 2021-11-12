@@ -1,6 +1,6 @@
-const eqObjects = require("./eqObjects");
-
 // Takes in 2 objects and prints Passed if eqObjects returns True and prints Failed if eqObjects returns False
+
+const eqObjects = require("./eqObjects");
 
 const assertObjectsEqual = function(actual, expected) {
 
