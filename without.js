@@ -16,9 +16,9 @@ const without = (source, itemsToRemove) => {
   const newArray = [];
 
   for (let i = 0; i < source.length; i++) {
-    if (includes(itemsToRemove, source[i])) {
-      continue;
-    } newArray.push(source[i]);
+    if (!includes(itemsToRemove, source[i])) {
+      newArray.push(source[i]);
+    } 
   }
   return newArray;
 };
