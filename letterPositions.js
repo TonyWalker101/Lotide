@@ -1,6 +1,6 @@
 // Takes in a string and returns indices of letter positions in the string
 
-const letterPositions = function(sentence) {
+const letterPositions = sentence => {
   
   const results = {};
   let index = 0;
