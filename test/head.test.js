@@ -1,6 +1,8 @@
 const head = require("../head");
 const assert = require("chai").assert;
 
+// Test cases
+
 describe ("#head", () => {
   it ("returns 1 for [1,2,3]", () => {
 
