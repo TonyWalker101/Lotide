@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@tony_walker101/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash Library. Created for eductional purposes.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TonyWalker101/Lotide.git"
   },
-  "author": "",
+  "author": "Tony Walker",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TonyWalker101/Lotide/issues"
