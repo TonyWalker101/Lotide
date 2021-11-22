@@ -2,12 +2,12 @@
 
 const findKeyByValue = (object,value) => {
 
-  for (const obj in object) {
-    if (object[obj] === value) {
-      return obj;
+  for (const key in object) {
+    if (object[key] === value) {
+      return key;
     }
   }
-  return undefined;
+  
 };
 
 module.exports = findKeyByValue;
