@@ -7,7 +7,6 @@ const findKeyByValue = (object,value) => {
       return key;
     }
   }
-  
 };
 
 module.exports = findKeyByValue;
